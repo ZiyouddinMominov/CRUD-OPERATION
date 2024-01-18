@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- HEAD START -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LINK FOR BOOTSTRAP 5 START -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- LINK FOR BOOTSTRAP 5 END -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+    <!-- TITLE START -->
+    <title>ADMIN PANEL</title>
+    <!-- TITLE END -->
+  </head>
+  <!-- BODY START -->
+  <body>
+    <div class="container mt-4">
+      <h1 class="text-center">Admin Panel</h1>
+      <div class="from-wrapper mb-5">
+        <form id="form">
+          <!-- ONE START -->
+          <div class="mb-3 mt-3">
+            <label for="name" class="form-label">Name*</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Enter name"
+              name="name"
+            />
+          </div>
+          <!-- TWO START -->
+          <div class="mb-3 mt-3">
+            <label for="price" class="form-label">Price*</label>
+            <input
+              type="number"
+              class="form-control"
+              id="price"
+              placeholder="Enter price"
+              name="price"
+            />
+          </div>
+          <!-- THREE START -->
+          <div class="mb-3 mt-3">
+            <label for="category" class="form-label">Category*</label>
+            <select class="form-select" id="category">
+              <option value="1">Samsung</option>
+              <option value="2">Iphone</option>
+              <option value="3">Huawei</option>
+              <option value="4">Redmi</option>
+            </select>
+          </div>
+          <!-- FOUR START -->
+          <div class="mb-3 mt-3">
+            <label for="description">Description</label>
+            <textarea
+              class="form-control"
+              rows="5"
+              id="description"
+              name="text"
+            ></textarea>
+          </div>
+
+          <!-- BUTTON START -->
+          <button id="button" type="submit" class="btn btn-primary">
+            Save
+          </button>
+        </form>
+        <!-- FORM END -->
+      </div>
+      <div class="table-wrapper">
+        <table class="table">
+          <thead class="table-dark">
+            <tr>
+              <th>No</th>
+              <th>Name</th>
+              <th>Price</th>
+              <th>Description</th>
+              <th>Category id</th>
+              <th>Status</th>
+              <th>Active</th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="../js/admin.js" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
